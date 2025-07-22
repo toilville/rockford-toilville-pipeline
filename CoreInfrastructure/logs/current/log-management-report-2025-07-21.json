@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-07-21T23:06:00.358Z",
+  "current": {
+    "count": 1,
+    "totalSize": 247,
+    "oldestLog": 0.2823851851851852
+  },
+  "archived": {
+    "count": 0
+  },
+  "retentionPolicy": "7 days",
+  "summary": "Maintaining 1 current logs, 0 archived logs"
+}

@@ -1,0 +1,64 @@
+{
+  "folders": [
+    {
+      "name": "Rockford - Toilville Pipeline Intelligence",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "window.title": "Rockford - Toilville Pipeline Intelligence - ${activeEditorShort}${separator}${rootName}",
+    "workbench.colorTheme": "Default Dark+",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "npm.enableScriptExplorer": true,
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/logs": true,
+      "**/private-data": true,
+      "**/.git": true,
+      "**/dist": true
+    },
+    "files.exclude": {
+      "**/.DS_Store": true,
+      "**/node_modules": true,
+      "**/dist": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-vscode.vscode-typescript-next",
+      "ms-vscode.vscode-json",
+      "ms-vscode.vscode-eslint",
+      "ms-vscode.vscode-npm-scripts",
+      "github.vscode-pull-request-github"
+    ]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Contact Sync",
+        "type": "shell",
+        "command": "npm run contact:sync",
+        "group": "build",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "panel": "shared"
+        }
+      },
+      {
+        "label": "Contact Test",
+        "type": "shell", 
+        "command": "npm run contact:test",
+        "group": "test"
+      },
+      {
+        "label": "Log Management",
+        "type": "shell",
+        "command": "npm run logs:manage",
+        "group": "build"
+      }
+    ]
+  }
+}

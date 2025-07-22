@@ -1,0 +1,39 @@
+{
+  "name": "rockford-toilville-pipeline-intelligence",
+  "version": "1.0.0",
+  "description": "Comprehensive Data Pipeline and Intelligence Platform for Peter Swimm - Advanced contact sync, email intelligence, data enrichment, and workflow automation",
+  "main": "ContactIntelligence/Sync/production-fast-sync.js",
+  "scripts": {
+    "build": "tsc",
+    "contact:sync": "npx tsx ContactIntelligence/Sync/production-fast-sync.ts",
+    "contact:sync:dry": "npx tsx ContactIntelligence/Sync/production-fast-sync.ts --dry-run",
+    "contact:sync:force": "npx tsx ContactIntelligence/Sync/production-fast-sync.ts --force",
+    "contact:dedupe": "npx tsx ContactIntelligence/Sync/deduplication-cleaner.ts",
+    "contact:dedupe:dry": "npx tsx ContactIntelligence/Sync/deduplication-cleaner.ts --dry-run",
+    "contact:test": "npx tsx ContactIntelligence/Testing/quick-sync-test-clean.ts",
+    "contact:test:mail": "npx tsx ContactIntelligence/Testing/quick-sync-test-clean.ts --test-mail",
+    "contact:test:notion": "npx tsx ContactIntelligence/Testing/quick-sync-test-clean.ts --test-notion",
+    "dev:organize": "npx tsx CoreInfrastructure/Utils/dev-organizer.ts",
+    "logs:manage": "npx tsx CoreInfrastructure/Utils/log-manager.ts",
+    "logs:clean": "npm run logs:manage",
+    "logs:schedule": "npx tsx CoreInfrastructure/Utils/log-scheduler.ts",
+    "logs:schedule:help": "npx tsx CoreInfrastructure/Utils/log-scheduler.ts --help",
+    "logs:cron": "npx tsx CoreInfrastructure/Utils/log-scheduler.ts --cron-setup",
+    "dev:clean": "npm run dev:organize && npm run logs:manage",
+    "pipeline:status": "echo 'Rockford - Toilville Pipeline Intelligence Status: ContactIntelligence Active, Other Modules Planned'",
+    "test": "npm run contact:test"
+  },
+  "keywords": ["notion", "contacts", "sync", "apple", "icloud", "automation"],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.16.0",
+    "@types/node": "^24.0.15",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "zod": "^3.25.76"
+  }
+}

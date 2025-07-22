@@ -1,0 +1,6 @@
+# Ignore PII and sensitive files
+apple-contacts-backup-*.json
+safe-contacts-to-add-*.json
+batched-contact-analysis-*.json
+contact-analysis-*.csv
+safe-sync-report-*.json

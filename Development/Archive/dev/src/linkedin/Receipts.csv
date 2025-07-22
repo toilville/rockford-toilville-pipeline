@@ -1,0 +1,6 @@
+First Name,Last Name,Billing Country,Postal Code,Transaction Made At,Payment Method Type,Invoice Number,Description,Tax Amount,Sub Total,Total Amount,Currency Code
+Peter,Swimm,us,98005,"1/21/25, 7:16 AM",CreditCard,10149685546,LinkedIn Ads recurring charges,0,47.18,47.18,USD
+Peter,Swimm,us,98005,"1/16/25, 7:16 AM",CreditCard,10141548606,LinkedIn Ads recurring charges,0,77.07,77.07,USD
+Peter,Swimm,us,98005,"1/8/25, 6:49 PM",CreditCard,10127983606,LinkedIn Ads account activation,0,0,0,USD
+Peter,Swimm,us,78752,"10/2/20, 1:21 PM",Paypal,5950855264,Premium Career Subscription (Monthly),0,0,0,USD
+Peter,Swimm,us,78752,"5/1/18, 5:56 PM",Paypal,3797511974,Premium Career Subscription (Monthly),0,0,0,USD
